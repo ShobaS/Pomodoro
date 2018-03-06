@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="favicon.jpg"/>
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div>
+      <header>
+          <h1>Pomodoro Clock</h1>
+      </header>
+      <main>
+        <div class="break-len inline-block">
+          <div>
+            <label>BREAK LENGTH</label>
+          </div>
+          <div>
+            <a id="breakMinus" href="javascript:void(0)">-</a>
+            <span id="breakLen">5</span>
+            <a id="breakPlus" href="javascript:void(0)">+</a>
+          </div>
+        </div>
+        <div class="session-len inline-block">
+          <div>
+            <label>SESSION LENGTH</label>
+          </div>
+          <div>
+            <a id="sessionMinus" href="javascript:void(0)">-</a>
+            <span id="sessionLen">25</span>
+            <a id="sessionPlus" href="javascript:void(0)">+</a>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="start-btn" id="startBtn">Start</button>
+          <button class="pause-btn" id="pauseBtn">Pause</button>
+          <button class="reset-btn" id="resetBtn">Reset</button>
+        </div>
+        <div class="session-timer" id="sessionTimer">
+          <h2 id="taskName">Session</h2>
+          <span id="sessionTiming">25</span>
+        </div>
+      </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
